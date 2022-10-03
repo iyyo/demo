@@ -1,0 +1,473 @@
+/*头部*/
+.head {
+    width: 100%;
+    height: 44px;
+    background: #0EB6FF;
+    padding: 7px 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 222;
+}
+
+.head .position {
+    display: block;
+    width: 43px;
+    height: 37px;
+    /* background-color: red; */
+    float: left;
+    color: white;
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+.head .position::before {
+    /* background-color: blue; */
+}
+
+.search {
+    margin: 0 43px;
+    height: 30px;
+    /* background-color:saddlebrown; */
+    /* border-radius: 15px; */
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 35px;
+    color: #9D9E9D;
+    font-size: 14px;
+}
+
+.search .icon-seaech {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+    top: 6px;
+    left: 12px;
+}
+
+.head .weixin {
+    display: block;
+    width: 43px;
+    height: 37px;
+    /* background-color: pink; */
+    float: right;
+    color: white;
+    font-size: 21px;
+    padding-left: 12px;
+}
+
+
+/*导航*/
+.menu {
+    padding: 44px 10px 17px;
+}
+
+.menu ul li {
+    width: 20%;
+    float: left;
+    padding: 0 9px;
+    margin-top: 16px;
+}
+
+.menu .menu-item-icon {
+    /* background-color: red; */
+    padding-bottom: 100%;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.menu .menu-item-title {
+    color: #101010;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1;
+}
+
+/*设置阿里图标样式*/
+.menu .menu-item-icon::before {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*更换每个图标的背景图片*/
+.menu .icon-shucai {
+    background-color: #BDE56F;
+}
+
+.menu .icon-qinlei {
+    background-color: #F8CFB4;
+}
+
+.menu .icon-yu {
+    background-color: #B4DEFF;
+}
+
+.menu .icon-lengdongshipin {
+    background-color: #9EB9E2;
+}
+
+.menu .icon-mimian {
+    background-color: #FFE391;
+}
+
+.menu .icon-dazhe {
+    background-color: #7AD9EB;
+}
+
+.menu .icon-xuegao {
+    background-color: #C3C0FF;
+}
+
+.menu .icon-lingshi {
+    background-color: #FECD9C;
+}
+
+.menu .icon-yinliao {
+    background-color: #99E7C4;
+}
+
+.menu .icon-yijia {
+    background-color: #86D0E9;
+}
+
+@media screen and (min-width:500px) {
+    .menu .menu-item-title {
+        font-size: 16px;
+    }
+
+    .menu .menu-item-icon::before {
+        font-size: 45px;
+    }
+}
+
+
+/*超划算*/
+.main {
+    padding: 0 10px;
+
+}
+
+.cheap {
+    background-color: white;
+    width: 100%;
+    height: 185px;
+    border-radius: 5px;
+}
+
+.cheap-title p {
+    display: inline-block;
+    color: #101010;
+    font-size: 14px;
+    font-weight: 700;
+
+    margin: 15px 0 13px 12px;
+
+}
+
+.cheap-title a {
+    color: #101010;
+    font-size: 12px;
+    margin-left: 245px;
+}
+
+.cheap-title .iconfont {
+    margin-right: 0px;
+}
+
+/*商品布局*/
+.cheap-content ul li {
+    width: 33.3%;
+    float: left;
+    padding: 0 13px;
+}
+
+.cheap-content a {
+    width: 94px;
+    height: 81px;
+    display: inline-block;
+    border: 1px dashed black;
+}
+
+.cheap-content a img {
+    width: 100%;
+    height: 100%;
+}
+
+.cheap-content .tit {
+    display: inline-block;
+    padding-top: 7px;
+    color: #101010;
+    font-size: 12px;
+}
+
+.cheap-content i {
+    display: inline-block;
+    color: #CE5F41;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 3px;
+}
+
+.cheap-content em {
+    font-style: normal;
+    color: #101010;
+}
+
+.cheap-content .iconfont {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #0EB6FF;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* 产品推荐 - 吃好点-产地量贩 */
+.cheap2 {
+
+    width: 100%;
+    height: 132px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.recommend {
+    margin-top: 10px;
+
+    /* margin: 10px; */
+    float: left;
+}
+
+.recommend-left {
+    /* width: 100%; */
+    height: 131px;
+    background: white;
+    border-radius: 5px;
+
+}
+
+.recommend-left h2 {
+    display: inline-block;
+    margin: 7px 0 0 13px;
+}
+
+.recommend-left p {
+    color: #9D9E9D;
+    font-size: 12px;
+
+    margin: 3px 0 0 13px;
+}
+
+.recommend-left a {
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    /* margin-left: 13px; */
+    margin: 5px 11px 12px 11px;
+    border: 1px dashed black;
+}
+
+.recommend-left img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*产品分类 导航区域*/
+.product-category-nav {
+    width: 100%;
+    height: 76px;
+    margin-top: 20px;
+}
+
+.product-category-nav>ul {
+    margin-left: 20px;
+}
+
+.product-category-nav li {
+    width: 25%;
+    float: left;
+}
+
+.product-category-nav>ul>li>span {
+    color: #101010;
+    font-size: 16px;
+    margin-left: 7px
+}
+
+.product-category-nav>ul>li>span:hover {
+    color: #0EB6FF;
+    cursor: pointer;
+}
+
+.product-category-nav>ul>li>p {
+    color: #9D9E9D;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.product-category-nav>ul>li>p:hover {
+    width: 63px;
+    height: 17px;
+    background: #0EB6FF;
+    border-radius: 9px;
+    padding-left: 6px;
+    cursor: pointer;
+    margin-left: -5px;
+    color: white;
+}
+
+/*商品介绍*/
+.product-category-shop {
+    width: 100%;
+    /* height: 131px; */
+    /* background: white; */
+    border-radius: 5px;
+    margin-top: -15px;
+}
+
+.product-category-shop>ul>.one {
+    position: relative;
+    margin-bottom: 10px;
+    height: 131px;
+    background: white;
+}
+
+.product-category-shop>ul>.one>a {
+    display: inline-block;
+    width: 94px;
+    height: 81px;
+    margin-left: 9px;
+    margin-top: 23px;
+    border: 1px dotted black;
+}
+
+.product-category-shop>ul>.one>a img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-category-shop>ul>.one>p {
+    color: #101010;
+    font-size: 14px;
+    position: absolute;
+    top: 3px;
+    left: 115px;
+}
+
+.product-category-shop>ul>.one>nav {
+    position: absolute;
+    top: 54px;
+    left: 115px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    width: 32px;
+    height: 18px;
+    text-align: center;
+}
+
+.product-category-shop>ul>.one>.fh {
+    position: absolute;
+    top: 54px;
+    left: 152px;
+    border: 1px solid #9D9E9D;
+    color: #9D9E9D;
+    border-radius: 5px;
+    width: 60px;
+    height: 18px;
+    text-align: center;
+}
+
+.product-category-shop>ul>.one>i {
+    color: #CE5F41;
+    font-size: 14px;
+    position: absolute;
+    top: 81px;
+    left: 115px;
+    font-style: normal;
+}
+
+.product-category-shop>ul>.one>i>em {
+    font-style: normal;
+    color: black;
+    font-size: 12px;
+}
+
+.product-category-shop>ul>.one>h6 {
+    color: #9D9E9D;
+    position: absolute;
+    top: 88px;
+    left: 115px;
+    font-weight: normal;
+}
+
+.product-category-shop>ul>.one>.iconfont {
+    width: 22px;
+    height: 22px;
+    background: #0EB6FF;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 14px;
+    top: 76px;
+
+    text-align: center;
+    line-height: 22px;
+}
+
+
+/*底部导航*/
+.tabbar {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+}
+
+.tabbar ul {
+
+    /* margin: 5px 37px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tabbar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.tabbar ul li .iconfont::before {
+    display: inline-block;
+    font-size: 21px;
+}
+.tabbar ul li  :hover{
+    color: #0EB6FF;
+}
+.tabbar ul li p {
+    color: #9D9E9D;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.tabbar ul li p:hover{
+    color: #0EB6FF;
+}
